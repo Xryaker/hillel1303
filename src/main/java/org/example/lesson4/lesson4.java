@@ -1,10 +1,12 @@
-package org.example;
+package org.example.lesson4;
+
+import org.example.lesson45.massiverutils.PrintMass;
 
 import java.util.Arrays;
 import java.util.Random;
 
 public class lesson4 {
-
+    //@Vasiok404
     public static void main(String[] args) {
         int m = 10;
         int[] mass = new int[m];
@@ -44,12 +46,8 @@ public class lesson4 {
 
         System.out.println(Arrays.toString(mass));
 
+        PrintMass.printMassive(mass);
 
-        for (int t = 0; t < mass.length; t++) {
-            if (mass[t] % 2 == 0 && mass[t] != 0) {
-                System.out.print(mass[t] + " ");
-            }
-        }
         System.out.println("");
         for (int t = (mass.length - 1) / 2; t >= 0; t--) {
             System.out.print(mass[t] + " ");
@@ -71,12 +69,8 @@ public class lesson4 {
         };
         System.out.println(matrix[1][2]);
         System.out.println(matrix.length);
-        for (int t = 0; t < matrix.length; t++) {
-            System.out.println("");
-            for (int n = 0; n < matrix[t].length; n++) {
-                System.out.print(matrix[t][n] + " ");
-            }
-        }
+//        printMassive(matrix);
+        PrintMass.printMassive(matrix);
         int r=0;
         while (r<10){
             System.out.println("r="+r);
@@ -89,4 +83,9 @@ public class lesson4 {
             r++;
         }while (r<10);
     }
+
+
+
+
+
 }
