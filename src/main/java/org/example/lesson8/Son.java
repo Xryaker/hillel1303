@@ -1,6 +1,8 @@
 package org.example.lesson8;
 
-public class Son implements Mother, Father{
+public class Son implements Father,Mother{
+
+
     @Override
     public void love() {
         

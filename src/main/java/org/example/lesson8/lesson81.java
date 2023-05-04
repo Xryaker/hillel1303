@@ -4,7 +4,7 @@ public class lesson81 {
     public static void main(String[] args) {
         Son son = new Son();
         Uncle uncle = new Uncle();
-
+son.vork();
         test(uncle);
         Baby baby = new Baby();
         Father father = new Son();

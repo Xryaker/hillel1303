@@ -1,5 +1,7 @@
 package org.example.lesson6.animals;
 
+import org.example.lesson9.SEASON;
+
 public class Bird extends Animal{
 
     public String getColor() {
@@ -13,5 +15,11 @@ public class Bird extends Animal{
         super(name, age);
         this.color = color;
         this.number = number;
+    }
+
+    public void setColor(SEASON color) {
+      switch (color){
+          case SPRING -> this.color="";
+      }
     }
 }
